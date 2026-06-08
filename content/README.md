@@ -1,8 +1,8 @@
 ### Youtube Reference
-#### Three.js in FlowFuse Node-RED Dashboard - Part 3: Model Animation and Process Visualization
+#### Three.js in FlowFuse Node-RED Dashboard - Part 4: Interactive Machine Models and Digital Twin
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=NQWUiPWUjNY" target="_blank">
-    <img src="https://img.youtube.com/vi/NQWUiPWUjNY/0.jpg" alt="YouTube Video Thumbnail" width="480" />
+  <a href="https://www.youtube.com/watch?v=sElx62YDwp8" target="_blank">
+    <img src="https://img.youtube.com/vi/sElx62YDwp8/0.jpg" alt="YouTube Video Thumbnail" width="480" />
   </a>
 </p>
 Click the image above to watch the video

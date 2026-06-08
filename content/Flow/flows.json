@@ -1,333 +1,341 @@
 [
     {
-        "id": "168ef48b19c5ec43",
+        "id": "e5209eca5f184bd9",
         "type": "tab",
-        "label": "GLB",
+        "label": "Dynamic",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "a9d79a492f4b9f5c",
+        "id": "67b9de111c979d54",
         "type": "group",
-        "z": "168ef48b19c5ec43",
-        "name": "Simple Load",
+        "z": "e5209eca5f184bd9",
+        "name": "Change Model",
         "style": {
             "label": true
         },
         "nodes": [
-            "0d8ac1e1c75e3bcd"
+            "d055c693ad1f99ee",
+            "cda6dd58e1814227",
+            "03924c17d5ac1b50",
+            "2ef915ce79d62bd7",
+            "6ae988041ed8f654",
+            "71a0d7758615c028",
+            "2e689dfb15850526",
+            "9f7c24a25a61286b",
+            "a6feb5a0ca342910",
+            "5143d5c08d8cdccd",
+            "1162a5f6b6a3aa34"
         ],
-        "x": 54,
+        "x": 34,
         "y": 39,
-        "w": 192,
-        "h": 82
+        "w": 1032,
+        "h": 222
     },
     {
-        "id": "ea1b052ff236cd42",
+        "id": "2a9d87dbca975dd5",
         "type": "group",
-        "z": "168ef48b19c5ec43",
-        "name": "Change Color",
+        "z": "e5209eca5f184bd9",
+        "name": "Text Monitor",
         "style": {
             "label": true
         },
         "nodes": [
-            "57f5639a99dd2395",
-            "017350b3b5972b2c",
-            "70d8ecae71c1fbc9",
-            "25da299497debf1d",
-            "c49ce3102f1e5b9d"
+            "bd24e1648f4c6b52",
+            "606bb2fdc3538980",
+            "c49e7af20efcca7e"
         ],
-        "x": 54,
-        "y": 139,
-        "w": 432,
-        "h": 202
+        "x": 34,
+        "y": 419,
+        "w": 412,
+        "h": 122
     },
     {
-        "id": "8bc5e4f3b479899a",
+        "id": "d545f941cf9a937e",
         "type": "group",
-        "z": "168ef48b19c5ec43",
-        "name": "Rotation Fan",
+        "z": "e5209eca5f184bd9",
+        "name": "Machine Door",
         "style": {
             "label": true
         },
         "nodes": [
-            "520edb469a3dbcca",
-            "e11b383d7ffc818d",
-            "d746e54fa8f14181",
-            "9491988062c3f2e4",
-            "d15b37a0283142a8",
-            "c3597656ed611e75",
-            "233b1ec374e337cf"
+            "12a2b8bc474674cf",
+            "1ed3da6719d0544b",
+            "9ddc3548db8f6ef9",
+            "6f8fc8914d3d511b"
         ],
-        "x": 54,
-        "y": 359,
-        "w": 752,
-        "h": 162
+        "x": 34,
+        "y": 279,
+        "w": 612,
+        "h": 122
     },
     {
-        "id": "5eeb71663615d4fe",
+        "id": "de602093b23dc662",
         "type": "group",
-        "z": "168ef48b19c5ec43",
-        "name": "Water Dispenser",
+        "z": "e5209eca5f184bd9",
+        "name": "Tower lamp",
         "style": {
             "label": true
         },
         "nodes": [
-            "b3fd804aa0848923",
-            "f44d72157c33ab07",
-            "ee67a56cab6c32e7",
-            "b9bbeeafc52b3b62",
-            "3ac614fdf19a5866"
+            "4292cb578e229d3d",
+            "f3757385f5a1d1b7",
+            "80022eed2692b943",
+            "afb23bd6efa2f159",
+            "30e19e09f697e7b5",
+            "f7dff726e693316a",
+            "0f09ab6c11024dc3"
         ],
-        "x": 54,
-        "y": 539,
+        "x": 34,
+        "y": 659,
         "w": 632,
         "h": 162
     },
     {
-        "id": "0d8ac1e1c75e3bcd",
+        "id": "546f539ff2f7ec91",
+        "type": "group",
+        "z": "e5209eca5f184bd9",
+        "name": "Gauge",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "53f043a81f176121",
+            "de64b4dfaf2dbdc7",
+            "0a2c387cea72eb45"
+        ],
+        "x": 34,
+        "y": 559,
+        "w": 612,
+        "h": 82
+    },
+    {
+        "id": "d055c693ad1f99ee",
         "type": "ui-template",
-        "z": "168ef48b19c5ec43",
-        "g": "a9d79a492f4b9f5c",
-        "group": "caec5d268b4b8826",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "group": "781892863eac3c62",
         "page": "",
         "ui": "",
-        "name": "Duck Simple",
-        "order": 1,
+        "name": "Change Model",
+        "order": 4,
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div ref=\"container\" style=\"\n            width:100%;\n            height:100%;\n            min-height:400px;\n        \"></div>\n</template>\n\n<script>\nexport default {\n    async mounted() {\n        const THREE = await import('https://esm.sh/three@0.179.1')\n        const { OrbitControls } = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n        const { GLTFLoader } = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                75,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n        camera.position.set(5,5,5)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias:true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(renderer.domElement)\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.enableDamping = true\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                3\n            )\n\n        light.position.set(5,10,5)\n        scene.add(light)\n\n        // Grid\n        scene.add(\n            new THREE.GridHelper(\n                20,\n                20\n            )\n        )\n\n        // Axis\n        scene.add(new THREE.AxesHelper(5))\n\n        // Load GLB\n        const loader = new GLTFLoader()\n\n        loader.load(\n            \"/models/Duck.glb\",\n            (gltf) => {\n                const duck = gltf.scene\n\n                duck.scale.set(2,2,2)\n                duck.position.set(0,0,0)\n\n                duck.userData.type = \"duck\"\n                scene.add(duck)\n                this.duck = duck\n                console.log(\"Duck Loaded\", duck)\n            },\n\n            undefined,\n            (err) => {console.error(err)}\n        )\n\n        // Animation\n        const animate = () => {\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n\n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
+        "format": "<template>\n    <div ref=\"container\" style=\"width:100%;height:100%;min-height:600px;\">\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            currentModel: null,\n            currentModelName: null,\n\n            scene: null,\n            camera: null,\n            renderer: null,\n            controls: null,\n            loader: null,\n\n            dropVelocity: 0,\n            isDropping: false\n        }\n    },\n\n    watch: {\n        msg() {\n            if (this.msg?.model && this.msg.model !== this.currentModelName) {\n                this.loadModel(this.msg.model)\n            }\n        }\n    },\n\n    methods: {\n        loadModel(filename) {\n            console.log(\"LOAD MODEL:\",filename)\n\n            // Remove old model\n            if (this.currentModel) {\n                this.scene.remove(this.currentModel)\n                this.currentModel.traverse(\n                    (obj) => {\n                        if (obj.isMesh) {\n                            obj.geometry?.dispose()\n\n                            if (Array.isArray(obj.material)) {\n                                obj.material.forEach(m => m.dispose())\n                            }\n                            else {\n                                obj.material?.dispose()\n                            }\n                        }\n                    }\n                )\n            }\n\n            this.loader.load(\n                `/models/${filename}`,\n                (gltf) => {\n\n                    const model = gltf.scene\n                    model.scale.set(1,1,1)\n\n                    // mulai dari atas\n                    model.position.set(0,5,0)\n\n                    this.dropVelocity = 0\n                    this.isDropping = true\n\n                    this.scene.add(model)\n                    this.currentModel =model\n                    this.currentModelName =filename\n\n                },\n\n                undefined,\n\n                (err) => {\n                    console.error(err)\n                }\n\n            )\n\n        }\n\n    },\n\n    async mounted() {\n        const THREE = await import('https://esm.sh/three@0.179.1')\n\n        window.THREE = THREE\n        const {OrbitControls} = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n\n        const { GLTFLoader} = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                75,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n\n        camera.position.set(0,5,6)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias: true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(\n            renderer.domElement\n        )\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.enableDamping = true\n        controls.target.set(0,2,0)\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                3\n            )\n\n        light.position.set(\n            5,\n            10,\n            5\n        )\n\n        scene.add(light)\n\n        // delete grid\n        //scene.add(\n        //    new THREE.GridHelper(\n        //        20,\n        //       20\n        //    )\n        //)\n\n        //scene.add(\n        //    new THREE.AxesHelper(\n        //        5\n        //   )\n        //)\n\n        this.scene = scene\n        this.camera = camera\n        this.renderer = renderer\n        this.controls = controls\n        this.loader = new GLTFLoader()\n\n        // Load floor (tetap ada)\n        this.loader.load(\"/models/floor.glb\",(gltf) => {\n            const floor = gltf.scene\n            floor.position.set(0,0,0)\n            floor.scale.set(0.065,1,0.03)\n\n            scene.add(floor)\n\n            this.floorModel = floor\n        },\n            undefined,\n            (err) => {\n                console.error(\"Floor error:\", err)\n            }\n        )\n\n        const animate = () => {\n\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n\n            if (this.currentModel && this.isDropping) {\n                this.dropVelocity += 0.015\n\n                this.currentModel.position.y -= this.dropVelocity\n                // menyentuh lantai\n                if (this.currentModel.position.y < 0 ) { \n                    this.currentModel.position.y=0 \n                    // pantulan kecil \n                    this.dropVelocity *=-0.3 \n                    //berhenti jika sudah pelan \n                    if ( Math.abs(this.dropVelocity) < 0.05 ) { \n                        this.dropVelocity=0 \n                        this.isDropping=false \n                    } \n                }\n            }\n                \n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 150,
-        "y": 80,
+        "x": 960,
+        "y": 220,
         "wires": [
             []
         ]
     },
     {
-        "id": "57f5639a99dd2395",
-        "type": "ui-template",
-        "z": "168ef48b19c5ec43",
-        "g": "ea1b052ff236cd42",
-        "group": "114f08da44e3c00f",
-        "page": "",
-        "ui": "",
-        "name": "Duck Simple",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n    <div ref=\"container\" style=\"\n            width:100%;\n            height:100%;\n            min-height:400px;\n        \"></div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            duck: null,\n            duckMesh: null,\n            originalColor: null\n        }\n    },\n\n    watch: {\n        msg() {          \n            if (!this.duckMesh) return          \n            if (!this.msg?.payload) return\n            \n            if (this.msg.payload ===\"reset\") {           \n                this.duckMesh.material.color.copy(this.originalColor)          \n                return         \n            }            \n            this.duckMesh.material.color.set(this.msg.payload)        \n        }\n    },\n\n    async mounted() {\n        const THREE = await import('https://esm.sh/three@0.179.1')\n        const { OrbitControls } = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n        const { GLTFLoader } = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                75,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n        camera.position.set(5,5,5)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias:true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(renderer.domElement)\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.enableDamping = true\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                3\n            )\n\n        light.position.set(5,10,5)\n        scene.add(light)\n\n        // Grid\n        scene.add(\n            new THREE.GridHelper(\n                20,\n                20\n            )\n        )\n\n        // Axis\n        scene.add(new THREE.AxesHelper(5))\n\n        // Load GLB\n        const loader = new GLTFLoader()\n\n        loader.load(\n            \"/models/Duck.glb\",\n            (gltf) => {\n                const duck = gltf.scene\n\n                // Start to Traverse Object\n                let duckMesh = null\n                duck.traverse(\n                    (obj) => {\n                        if (obj.isMesh) {\n                            duckMesh = obj\n                            console.log(\"FOUND MESH:\",obj.name)\n                        }\n                    }\n                )\n\n                this.duckMesh = duckMesh\n                this.originalColor = duckMesh.material.color.clone()\n\n                duck.scale.set(2,2,2)\n                duck.position.set(0,0,0)\n\n                duck.userData.type = \"duck\"\n                scene.add(duck)\n                this.duck = duck\n            },\n\n            undefined,\n            (err) => {console.error(err)}\n        )\n\n        // Animation\n        const animate = () => {\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n\n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 390,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "017350b3b5972b2c",
-        "type": "ui-button",
-        "z": "168ef48b19c5ec43",
-        "g": "ea1b052ff236cd42",
-        "group": "114f08da44e3c00f",
+        "id": "cda6dd58e1814227",
+        "type": "ui-dropdown",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "group": "781892863eac3c62",
         "name": "",
-        "label": "RED",
+        "label": "Select Option:",
+        "tooltip": "",
         "order": 1,
-        "width": "2",
+        "width": "3",
         "height": "1",
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "#ED1275",
-        "payloadType": "str",
+        "passthru": true,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [],
+        "payload": "",
         "topic": "topic",
         "topicType": "msg",
-        "buttonColor": "",
-        "textColor": "",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 130,
-        "y": 180,
-        "wires": [
-            [
-                "57f5639a99dd2395"
-            ]
-        ]
-    },
-    {
-        "id": "70d8ecae71c1fbc9",
-        "type": "ui-button",
-        "z": "168ef48b19c5ec43",
-        "g": "ea1b052ff236cd42",
-        "group": "114f08da44e3c00f",
-        "name": "",
-        "label": "GREEN",
-        "order": 2,
-        "width": "2",
-        "height": "1",
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
         "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "#22DD9B",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "buttonColor": "",
-        "textColor": "",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 140,
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 520,
         "y": 220,
         "wires": [
             [
-                "57f5639a99dd2395"
+                "03924c17d5ac1b50",
+                "a6feb5a0ca342910"
             ]
         ]
     },
     {
-        "id": "25da299497debf1d",
-        "type": "ui-button",
-        "z": "168ef48b19c5ec43",
-        "g": "ea1b052ff236cd42",
-        "group": "114f08da44e3c00f",
+        "id": "03924c17d5ac1b50",
+        "type": "change",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
         "name": "",
-        "label": "ORANGE",
-        "order": 3,
-        "width": "2",
-        "height": "1",
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "#FF991C",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "buttonColor": "",
-        "textColor": "",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 140,
-        "y": 260,
+        "rules": [
+            {
+                "t": "set",
+                "p": "model",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 220,
         "wires": [
             [
-                "57f5639a99dd2395"
+                "d055c693ad1f99ee"
             ]
         ]
     },
     {
-        "id": "c49ce3102f1e5b9d",
-        "type": "ui-button",
-        "z": "168ef48b19c5ec43",
-        "g": "ea1b052ff236cd42",
-        "group": "114f08da44e3c00f",
-        "name": "",
-        "label": "RESET",
-        "order": 4,
-        "width": "2",
-        "height": "1",
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "reset",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "buttonColor": "yellow",
-        "textColor": "",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 140,
-        "y": 300,
-        "wires": [
-            [
-                "57f5639a99dd2395"
-            ]
-        ]
-    },
-    {
-        "id": "520edb469a3dbcca",
+        "id": "bd24e1648f4c6b52",
         "type": "ui-template",
-        "z": "168ef48b19c5ec43",
-        "g": "8bc5e4f3b479899a",
-        "group": "77fc9b50d805feac",
+        "z": "e5209eca5f184bd9",
+        "g": "2a9d87dbca975dd5",
+        "group": "a6637015b8a158c5",
         "page": "",
         "ui": "",
-        "name": "Table Fan",
-        "order": 4,
+        "name": "Static Text",
+        "order": 2,
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div ref=\"container\" style=\"\n            width:100%;\n            height:100%;\n            min-height:500px;\n        \"></div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            table_fan: null,\n            motor: null,\n            BladePivot: null,\n            \n            fanEnable: false,\n            swingEnable: false,\n            swingDirection: 1\n        }\n    },\n\n    watch: {\n        msg() {          \n            if (typeof this.msg?.swing === \"boolean\") {\n                this.swingEnable = this.msg.swing\n            }\n            if (typeof this.msg?.control === \"boolean\") {\n                this.fanEnable = this.msg.control\n            }\n        }\n    },\n\n    async mounted() {\n        const THREE = await import('https://esm.sh/three@0.179.1')\n        const { OrbitControls } = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n        const { GLTFLoader } = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                90,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n        camera.position.set(0,10,9)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias:true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(renderer.domElement)\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.enableDamping = true\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                3\n            )\n\n        light.position.set(5,10,5)\n        scene.add(light)\n\n        // Grid\n        scene.add(\n            new THREE.GridHelper(\n                20,\n                20\n            )\n        )\n\n        // Load GLB\n        const loader = new GLTFLoader()\n\n        loader.load(\n            \"/models/table_fan.glb\",\n            (gltf) => {\n                const table_fan = gltf.scene\n                    table_fan.traverse(\n                        (obj) => {\n                            if (obj.name === \"Motor\") {\n                                this.motor = obj\n                                console.log(\"FOUND MOTOR\",obj)\n                            }\n\n                            if (obj.name === \"BladePivot\") {\n                                this.BladePivot = obj\n                                console.log(\"FOUND BLADE SUPPORT\", obj)\n                            }\n\n                        }\n                    )\n                \n                table_fan.scale.set(0.02,0.02,0.02)\n                table_fan.position.set(0,0,0)\n\n                scene.add(table_fan)\n                this.table_fan = table_fan\n            },\n\n            undefined,\n            (err) => {console.error(err)}\n        )\n\n        // Animation\n        const animate = () => {\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n            if ( this.fanEnable && this.BladePivot) {\n                this.BladePivot.rotation.z +=0.2\n            }\n\n            if ( this.swingEnable && this.motor) {\n                this.motor.rotation.z += 0.01 * this.swingDirection\n\n                if (this.motor.rotation.z > Math.PI / 4) {\n                    this.swingDirection = -1\n                    }\n\n                if (this.motor.rotation.z < -Math.PI / 4 ) { \n                    this.swingDirection=1 \n                    } \n            }\n\n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
+        "format": "<template>\n    <div style=\"\n            padding:5px;\n            font-weight:bold;\n        \">\n        Static Text\n    </div>\n    <div\n        ref=\"container\"\n        style=\"\n            width:100%;\n            height:100%;\n            min-height:400px;\n        \"\n    ></div>\n</template>\n\n<script>\nexport default {\n\n    data() {\n        return {\n            monitor: null,\n\n            screenMesh: null,\n            screenCanvas: null,\n            screenCtx: null,\n            screenTexture: null\n        }\n    },\n\n    watch: {\n        msg() {\n            if (!this.screenCtx) return\n            const text = this.msg?.payload?.toString() || \"\"\n            this.updateScreen(text)\n        }\n    },\n\n    methods: {\n        updateScreen(text) {\n            const ctx = this.screenCtx\n            const canvas = this.screenCanvas\n\n            ctx.clearRect(\n                0,\n                0,\n                canvas.width,\n                canvas.height\n            )\n\n            // Background\n            ctx.fillStyle = \"#000000\"\n\n            ctx.fillRect(\n                0,\n                0,\n                canvas.width,\n                canvas.height\n            )\n\n            // Text\n            ctx.fillStyle = \"#00ff00\"\n\n            ctx.font = \"bold 40px Arial\"\n\n            ctx.textAlign = \"center\"\n\n            ctx.textBaseline = \"middle\"\n\n            ctx.fillText(\n                text,\n                canvas.width * 0.75,\n                canvas.height * 0.5\n            )\n\n            this.screenTexture.needsUpdate = true\n        }\n\n    },\n\n    async mounted() {\n        const THREE = await import( 'https://esm.sh/three@0.179.1' )\n        const {OrbitControls} = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n        const {GLTFLoader} = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                75,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n\n        camera.position.set(0,2,2.5)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias: true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(\n            renderer.domElement\n        )\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.target.set(0,1.5, 0)\n\n        controls.enableDamping = true\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                3\n            )\n\n        light.position.set(5,10,5)\n        scene.add(light)\n\n        // Grid\n        scene.add(\n            new THREE.GridHelper(\n                10,\n                10\n            )\n        )\n\n        // Loader\n        const loader =\n            new GLTFLoader()\n\n        loader.load(\n            \"/models/monitor.glb\",\n            (gltf) => {\n\n                const monitor = gltf.scene\n\n                monitor.traverse(\n                    (obj) => {\n\n                        if (obj.name === \"Monitor_Screen\") {\n                            console.log(\"SCREEN FOUND\")\n\n                            // Canvas\n                            const canvas =document.createElement(\"canvas\")\n\n                            canvas.width = 1024\n                            canvas.height = 1024\n\n                            const ctx = canvas.getContext(\"2d\")\n\n                            const texture = new THREE.CanvasTexture(canvas)\n\n                            // Adjustment rotation of text because UV\n                            texture.center.set(0.5,0.5)\n                            texture.rotation = -Math.PI/2\n                            \n                            obj.material =\n                                new THREE.MeshBasicMaterial({\n                                    map: texture\n                                })\n\n                            this.screenMesh = obj\n                            this.screenCanvas = canvas\n                            this.screenCtx = ctx\n                            this.screenTexture = texture\n                            this.updateScreen(\"WELCOME\")\n                        }\n\n                    }\n                )\n\n                monitor.scale.set(\n                    1,\n                    1,\n                    1\n                )\n\n                monitor.position.set(\n                    0,\n                    0,\n                    0\n                )\n\n                scene.add(\n                    monitor\n                )\n\n                this.monitor =\n                    monitor\n\n            },\n\n            undefined,\n\n            (err) => {\n                console.error(err)\n            }\n        )\n\n        const animate = () => {\n\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n\n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 720,
-        "y": 400,
+        "x": 350,
+        "y": 460,
         "wires": [
             []
         ]
     },
     {
-        "id": "e11b383d7ffc818d",
-        "type": "ui-button",
-        "z": "168ef48b19c5ec43",
-        "g": "8bc5e4f3b479899a",
-        "group": "77fc9b50d805feac",
+        "id": "606bb2fdc3538980",
+        "type": "ui-dropdown",
+        "z": "e5209eca5f184bd9",
+        "g": "2a9d87dbca975dd5",
+        "group": "a6637015b8a158c5",
         "name": "",
-        "label": "Turn ON",
+        "label": "Select Option:",
+        "tooltip": "",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "Hello World!",
+                "value": "Hello World!",
+                "type": "str"
+            },
+            {
+                "label": "This is Test Text",
+                "value": "This is Test Text",
+                "type": "str"
+            },
+            {
+                "label": "OEE Monitoring",
+                "value": "OEE Monitoring",
+                "type": "str"
+            },
+            {
+                "label": "Thanks For Watching!",
+                "value": "Thanks For Watching!",
+                "type": "str"
+            },
+            {
+                "label": "Like & Subscribe!",
+                "value": "Like & Subscribe!",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 140,
+        "y": 460,
+        "wires": [
+            [
+                "bd24e1648f4c6b52",
+                "c49e7af20efcca7e"
+            ]
+        ]
+    },
+    {
+        "id": "c49e7af20efcca7e",
+        "type": "ui-template",
+        "z": "e5209eca5f184bd9",
+        "g": "2a9d87dbca975dd5",
+        "group": "a6637015b8a158c5",
+        "page": "",
+        "ui": "",
+        "name": "Running Text",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div style=\"\n            padding:5px;\n            font-weight:bold;\n        \">\n        Running Text\n    </div>\n    <div\n        ref=\"container\"\n        style=\"\n            width:100%;\n            height:100%;\n            min-height:400px;\n        \"\n    ></div>\n</template>\n\n<script>\nexport default {\n\n    data() {\n        return {\n            monitor: null,\n\n            screenMesh: null,\n            screenCanvas: null,\n            screenCtx: null,\n            screenTexture: null,\n            displayText: \"WELCOME\",\n            marqueeX: 1024\n        }\n    },\n\n    watch: {\n        msg() {\n            if (!this.screenCtx) return\n            this.displayText =\n            this.msg?.payload?.toString() || \"\"\n            \n            this.marqueeX = this.screenCanvas.width\n        }\n    },\n\n    methods: {\n        updateScreen() {\n\n            const ctx = this.screenCtx\n            const canvas = this.screenCanvas\n\n            ctx.clearRect(\n                0,\n                0,\n                canvas.width,\n                canvas.height\n            )\n\n            // background\n            ctx.fillStyle = \"#000000\"\n            ctx.fillRect(\n                0,\n                0,\n                canvas.width,\n                canvas.height\n            )\n\n            // text\n            ctx.fillStyle = \"#cc0000\"\n            ctx.font = \"bold 40px Arial\"\n            ctx.textBaseline = \"middle\"\n\n            ctx.fillText(\n                this.displayText,\n                this.marqueeX,\n                canvas.height / 2\n            )\n\n            // move left\n            this.marqueeX -= 3\n\n            // restart when fully hidden\n            const textWidth =\n            ctx.measureText(\n                this.displayText\n            ).width\n\n            if (\n            this.marqueeX < -textWidth ) { this.marqueeX=canvas.width } this.screenTexture.needsUpdate=true \n            }\n\n    },\n\n    async mounted() {\n        const THREE = await import( 'https://esm.sh/three@0.179.1' )\n        const {OrbitControls} = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n        const {GLTFLoader} = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                75,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n\n        camera.position.set(0,2,2.5)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias: true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(\n            renderer.domElement\n        )\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.target.set(0,1.5, 0)\n\n        controls.enableDamping = true\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                3\n            )\n\n        light.position.set(5,10,5)\n        scene.add(light)\n\n        // Grid\n        scene.add(\n            new THREE.GridHelper(\n                10,\n                10\n            )\n        )\n\n        // Loader\n        const loader =\n            new GLTFLoader()\n\n        loader.load(\n            \"/models/monitor.glb\",\n            (gltf) => {\n\n                const monitor = gltf.scene\n\n                monitor.traverse(\n                    (obj) => {\n\n                        if (obj.name === \"Monitor_Screen\") {\n                            console.log(\"SCREEN FOUND\")\n\n                            // Canvas\n                            const canvas =document.createElement(\"canvas\")\n\n                            canvas.width = 1024\n                            canvas.height = 1024\n\n                            const ctx = canvas.getContext(\"2d\")\n\n                            const texture = new THREE.CanvasTexture(canvas)\n\n                            // Adjustment rotation of text because UV\n                            texture.center.set(0.5,0.5)\n                            texture.rotation = -Math.PI/2\n                            \n                            obj.material =\n                                new THREE.MeshBasicMaterial({\n                                    map: texture\n                                })\n\n                            this.screenMesh = obj\n                            this.screenCanvas = canvas\n                            this.screenCtx = ctx\n                            this.screenTexture = texture\n                            this.updateScreen(\"WELCOME\")\n                        }\n\n                    }\n                )\n\n                monitor.scale.set(\n                    1,\n                    1,\n                    1\n                )\n\n                monitor.position.set(\n                    0,\n                    0,\n                    0\n                )\n\n                scene.add(\n                    monitor\n                )\n\n                this.monitor =\n                    monitor\n\n            },\n\n            undefined,\n\n            (err) => {\n                console.error(err)\n            }\n        )\n\n        const animate = () => {\n\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n\n            if (this.screenTexture) {\n                this.updateScreen()\n            }\n\n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 350,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12a2b8bc474674cf",
+        "type": "ui-template",
+        "z": "e5209eca5f184bd9",
+        "g": "d545f941cf9a937e",
+        "group": "38d5933b58cdd3e3",
+        "page": "",
+        "ui": "",
+        "name": "Machine ",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div ref=\"container\" style=\"\n            width:100%;\n            height:100%;\n            min-height:500px;\n        \"></div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            machine: null,\n            door: null,           \n            doorOpen: false,         \n            doorClosedX: 0,\n            doorOpenX: 0\n        }\n    },\n\n    watch: {\n        msg() {          \n            if (typeof this.msg?.door === \"boolean\") {\n                this.doorOpen = this.msg.door\n            }\n        }\n    },\n\n    async mounted() {\n        const THREE = await import('https://esm.sh/three@0.179.1')\n        const { OrbitControls } = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n        const { GLTFLoader } = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                90,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n        camera.position.set(0,5,5)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias:true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(renderer.domElement)\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.enableDamping = true\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                3\n            )\n\n        light.position.set(5,10,5)\n        scene.add(light)\n\n        // Load GLB\n        const loader = new GLTFLoader()\n\n        loader.load(\n            \"/models/machine3.glb\",\n            (gltf) => {\n                const machine = gltf.scene\n                    machine.traverse(\n                        (obj) => {\n                            if (obj.name === \"Door\") {\n                                this.door = obj\n                                // Original model already Door Open\n                                this.doorOpenZ = obj.position.z                              \n                                this.doorClosedZ = obj.position.z - 2\n                            }\n\n                        }\n                    )\n                \n                machine.scale.set(1,1,1)\n                machine.position.set(0,0,0)\n\n                scene.add(machine)\n                this.machine = machine\n            },\n\n            undefined,\n            (err) => {console.error(err)}\n        )\n\n        // Load floor (tetap ada)\n        loader.load(\"/models/floor.glb\",(gltf) => {\n            const floor = gltf.scene\n            floor.position.set(0,0,0)\n            floor.scale.set(0.065,1,0.03)\n            \n            scene.add(floor)\n            \n            this.floorModel = floor\n        },\n            undefined,\n            (err) => {console.error(\"Floor error:\", err)}\n        )\n\n        // Animation\n        const animate = () => {\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n            // Animate Door\n            if (this.door) {          \n                const targetZ =\n                this.doorOpen\n                ? this.doorOpenZ\n                : this.doorClosedZ\n                \n                this.door.position.z +=\n                (targetZ - this.door.position.z)\n                * 0.05\n            }\n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 560,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ed3da6719d0544b",
+        "type": "ui-button",
+        "z": "e5209eca5f184bd9",
+        "g": "d545f941cf9a937e",
+        "group": "38d5933b58cdd3e3",
+        "name": "",
+        "label": "Door Open",
         "order": 1,
         "width": "3",
         "height": "1",
@@ -352,22 +360,22 @@
         "enablePointerup": false,
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
-        "x": 140,
-        "y": 440,
+        "x": 130,
+        "y": 320,
         "wires": [
             [
-                "c3597656ed611e75"
+                "6f8fc8914d3d511b"
             ]
         ]
     },
     {
-        "id": "d746e54fa8f14181",
+        "id": "9ddc3548db8f6ef9",
         "type": "ui-button",
-        "z": "168ef48b19c5ec43",
-        "g": "8bc5e4f3b479899a",
-        "group": "77fc9b50d805feac",
+        "z": "e5209eca5f184bd9",
+        "g": "d545f941cf9a937e",
+        "group": "38d5933b58cdd3e3",
         "name": "",
-        "label": "Turn OFF",
+        "label": "Door Close",
         "order": 2,
         "width": "3",
         "height": "1",
@@ -392,26 +400,79 @@
         "enablePointerup": false,
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
-        "x": 140,
-        "y": 400,
+        "x": 130,
+        "y": 360,
         "wires": [
             [
-                "c3597656ed611e75"
+                "6f8fc8914d3d511b"
             ]
         ]
     },
     {
-        "id": "9491988062c3f2e4",
-        "type": "ui-switch",
-        "z": "168ef48b19c5ec43",
-        "g": "8bc5e4f3b479899a",
+        "id": "6f8fc8914d3d511b",
+        "type": "change",
+        "z": "e5209eca5f184bd9",
+        "g": "d545f941cf9a937e",
         "name": "",
-        "label": "Swing",
-        "group": "77fc9b50d805feac",
-        "order": 3,
+        "rules": [
+            {
+                "t": "set",
+                "p": "door",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "12a2b8bc474674cf"
+            ]
+        ]
+    },
+    {
+        "id": "4292cb578e229d3d",
+        "type": "ui-template",
+        "z": "e5209eca5f184bd9",
+        "g": "de602093b23dc662",
+        "group": "2e7da168776e6eb9",
+        "page": "",
+        "ui": "",
+        "name": "Tower Lamp",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div ref=\"container\" style=\"\n            width:100%;\n            height:100%;\n            min-height:500px;\n        \"></div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            greenLight: null,\n            yellowLight: null,\n            redLight: null,\n\n            greenPoint: null,\n            yellowPoint: null,\n            redPoint: null\n        }\n    },\n\n    watch: {\n        msg() {          \n            if (typeof this.msg?.green === \"boolean\") {\n                this.setLamp(\n                    this.greenLight,\n                    this.greenPoint,\n                    this.msg.green,\n                    0x00ff00\n                )\n            }\n            \n            if (typeof this.msg?.yellow === \"boolean\") {\n                this.setLamp(\n                    this.yellowLight,\n                    this.yellowPoint,\n                    this.msg.yellow,\n                    0xffff00\n                )\n            }\n            \n            if (typeof this.msg?.red === \"boolean\") {\n                this.setLamp(\n                    this.redLight,\n                    this.redPoint,\n                    this.msg.red,\n                    0xff0000\n                )\n            }\n        }\n    },\n\n    methods: {\n        setLamp(mesh, pointLight, state, color) {\n            if (!mesh) return\n            if (state) {\n                mesh.material.emissive.setHex(color)\n                mesh.material.emissiveIntensity = 3\n                pointLight.intensity = 2\n            }\n            else {\n                mesh.material.emissive.setHex(0x000000)\n                mesh.material.emissiveIntensity = 0\n                pointLight.intensity = 0\n            }\n        }\n\n    },\n\n    async mounted() {\n        const THREE = await import('https://esm.sh/three@0.179.1')\n        const { OrbitControls } = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n        const { GLTFLoader } = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                90,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n        camera.position.set(0,1,1)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias:true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(renderer.domElement)\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.enableDamping = true\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                3\n            )\n\n        light.position.set(5,10,5)\n        scene.add(light)\n\n        // Load GLB\n        const loader = new GLTFLoader()\n\n        loader.load(\n            \"/models/tower_lamp.glb\",\n            (gltf) => {\n                const lamp = gltf.scene\n                    lamp.traverse(\n                        (obj) => {\n                            if (obj.name === \"Green_Light\") {\n                                this.greenLight = obj\n                                obj.material = obj.material.clone()\n                                obj.material.color.set(0x00aa00)\n\n                                // Point Light\n                                this.greenLight = obj                              \n                                const light =\n                                    new THREE.PointLight(\n                                        0x00ff00,\n                                        0,\n                                        2\n                                    )                              \n                                light.position.copy(\n                                        obj.getWorldPosition(\n                                        new THREE.Vector3()\n                                        )\n                                    )                              \n                                scene.add(light)                               \n                                this.greenPoint = light\n                            }\n\n                            if (obj.name === \"Yellow_Light\") {\n                                this.yellowLight = obj\n                                obj.material = obj.material.clone()\n                                obj.material.color.set(0xaaaa00)\n\n                                // Point Light\n                                this.yellowLight = obj                             \n                                const light =\n                                    new THREE.PointLight(\n                                        0xffff00,\n                                        0,\n                                        2\n                                    )                              \n                                light.position.copy(\n                                    obj.getWorldPosition(\n                                        new THREE.Vector3()\n                                    )\n                                )                               \n                                scene.add(light)                              \n                                this.yellowPoint = light\n                            }\n\n                            if (obj.name === \"Red_Light\") {\n                                this.redLight = obj\n                                obj.material = obj.material.clone()\n                                obj.material.color.set(0xaa0000)\n\n                                // Point Light\n                                this.redLight = obj                              \n                                const light =\n                                    new THREE.PointLight(\n                                        0xff0000,\n                                        0,\n                                        2\n                                    )                              \n                                light.position.copy(\n                                    obj.getWorldPosition(\n                                        new THREE.Vector3()\n                                    )\n                                )                              \n                                scene.add(light)                               \n                                this.redPoint = light\n                            }\n                        }\n                    )\n                \n                lamp.scale.set(1,1,1)\n                lamp.position.set(0,0,0)\n\n                scene.add(lamp)\n                this.lamp = lamp\n            },\n\n            undefined,\n            (err) => {console.error(err)}\n        )\n\n        // Load floor\n        loader.load(\"/models/floor.glb\",(gltf) => {\n            const floor = gltf.scene\n            floor.position.set(0,0,0)\n            floor.scale.set(0.015,1,0.006)\n            \n            scene.add(floor)\n            \n            this.floorModel = floor\n        },\n            undefined,\n            (err) => {console.error(\"Floor error:\", err)}\n        )\n\n        // Animation\n        const animate = () => {\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n\n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3757385f5a1d1b7",
+        "type": "ui-switch",
+        "z": "e5209eca5f184bd9",
+        "g": "de602093b23dc662",
+        "name": "",
+        "label": "Green Lamp",
+        "group": "2e7da168776e6eb9",
+        "order": 1,
         "width": "3",
         "height": "1",
-        "passthru": true,
+        "passthru": false,
         "decouple": false,
         "topic": "topic",
         "topicType": "msg",
@@ -427,59 +488,94 @@
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
-        "x": 370,
-        "y": 480,
+        "x": 130,
+        "y": 700,
         "wires": [
             [
-                "d15b37a0283142a8"
+                "30e19e09f697e7b5"
             ]
         ]
     },
     {
-        "id": "d15b37a0283142a8",
-        "type": "change",
-        "z": "168ef48b19c5ec43",
-        "g": "8bc5e4f3b479899a",
+        "id": "80022eed2692b943",
+        "type": "ui-switch",
+        "z": "e5209eca5f184bd9",
+        "g": "de602093b23dc662",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "swing",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 540,
-        "y": 480,
+        "label": "Yellow Lamp",
+        "group": "2e7da168776e6eb9",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 130,
+        "y": 740,
         "wires": [
             [
-                "520edb469a3dbcca"
+                "f7dff726e693316a"
             ]
         ]
     },
     {
-        "id": "c3597656ed611e75",
+        "id": "afb23bd6efa2f159",
+        "type": "ui-switch",
+        "z": "e5209eca5f184bd9",
+        "g": "de602093b23dc662",
+        "name": "",
+        "label": "Red Lamp",
+        "group": "2e7da168776e6eb9",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 130,
+        "y": 780,
+        "wires": [
+            [
+                "0f09ab6c11024dc3"
+            ]
+        ]
+    },
+    {
+        "id": "30e19e09f697e7b5",
         "type": "change",
-        "z": "168ef48b19c5ec43",
-        "g": "8bc5e4f3b479899a",
+        "z": "e5209eca5f184bd9",
+        "g": "de602093b23dc662",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "control",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "enabled",
+                "p": "green",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -491,164 +587,23 @@
         "to": "",
         "reg": false,
         "x": 360,
-        "y": 400,
+        "y": 700,
         "wires": [
             [
-                "520edb469a3dbcca",
-                "9491988062c3f2e4"
+                "4292cb578e229d3d"
             ]
         ]
     },
     {
-        "id": "233b1ec374e337cf",
-        "type": "inject",
-        "z": "168ef48b19c5ec43",
-        "g": "8bc5e4f3b479899a",
-        "name": "",
-        "props": [
-            {
-                "p": "enabled",
-                "v": "false",
-                "vt": "bool"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            },
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 150,
-        "y": 480,
-        "wires": [
-            [
-                "9491988062c3f2e4"
-            ]
-        ]
-    },
-    {
-        "id": "b3fd804aa0848923",
-        "type": "ui-template",
-        "z": "168ef48b19c5ec43",
-        "g": "5eeb71663615d4fe",
-        "group": "3fdfec0bfe79b90f",
-        "page": "",
-        "ui": "",
-        "name": "Dispenser",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n    <div ref=\"container\" style=\"\n            width:100%;\n            height:100%;\n            min-height:500px;\n        \"></div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            openValve: false,\n            resetGlass: false\n        }\n    },\n\n    watch: {\n        msg() {          \n            if (typeof this.msg?.open === \"boolean\") {\n                this.openValve = this.msg.open\n            }\n            if (this.msg?.payload === \"reset\") {\n                this.resetGlass = true\n            }\n        }\n    },\n\n    async mounted() {\n        const THREE = await import('https://esm.sh/three@0.179.1')\n        const { OrbitControls } = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n        const { GLTFLoader } = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                90,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n        camera.position.set(0,7,4)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias:true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(renderer.domElement)\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.enableDamping = true\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                2\n            )\n\n        light.position.set(5,10,5)\n        scene.add(light)\n\n        // Grid\n        scene.add(\n            new THREE.GridHelper(\n                10,\n                10\n            )\n        )\n\n        // Load GLB\n        const loader = new GLTFLoader()\n        loader.load(\n        \"/models/water_dispenser.glb\",\n        (gltf) => {\n            const water_dispenser = gltf.scene\n\n            water_dispenser.traverse((obj) => {\n                console.log(obj.name)\n\n                if (obj.name === \"Cold_water_dispenser_1\") {\n                    this.coldNozzle = obj\n                    console.log(\n                        \"NOZZLE\",\n                        obj.getWorldPosition(\n                        new THREE.Vector3()\n                        )\n                    )\n                }\n\n            })\n\n            water_dispenser.scale.set(1,1,1)\n            water_dispenser.position.set(0,0,0)\n\n            scene.add(water_dispenser)\n            this.water_dispenser = water_dispenser\n\n        },\n        undefined,\n        (err) => console.error(err)\n        )\n\n        // Create water flow from nozzle==============================\n        const waterGeometry = new THREE.CylinderGeometry(\n            0.011,\n            0.011,\n            0.7,\n            16\n        )\n\n        const waterMaterial = new THREE.MeshPhysicalMaterial({\n            color: 0x66ccff,\n            transparent: true,\n            opacity: 0.7\n        })\n\n        this.waterStream = new THREE.Mesh(\n            waterGeometry,\n            waterMaterial\n        )\n\n        this.waterStream.position.set(\n            0.192,\n            2.35,\n            0.570\n        )\n\n        scene.add(this.waterStream)\n        // start from 0\n        this.waterStream.scale.y = 0\n\n        // Nozzle position:\n        this.waterTopY = 2.67\n        this.waterHeight = 0.7\n\n        // Create water in glass==============================\n        const waterGlassGeometry = new THREE.CylinderGeometry(\n            0.090,\n            0.049,\n            0.53,\n            16\n        )\n        \n        const waterGlassMaterial = new THREE.MeshPhysicalMaterial({\n            color: 0x66ccff,\n            transparent: true,\n            opacity: 0.7\n        })\n        \n        this.waterGlass = new THREE.Mesh(\n            waterGlassGeometry,\n            waterGlassMaterial\n        )\n        \n        this.waterGlass.position.set(\n            0.192,\n            2.153,\n            0.58\n        )\n        \n        scene.add(this.waterGlass)\n        // start empty\n        this.waterGlass.scale.y = 0\n        \n        // bottom position of water in glass\n        this.waterGlassBottomY = 1.89\n        \n        // max water height\n        this.waterGlassHeight = 0.53\n\n        // Animation\n        const animate = () => {\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n\n            // Open / Close water\n            if (this.openValve) {\n                if (this.waterStream.scale.y < 1) { \n                    this.waterStream.scale.y +=0.03 } \n            } \n            else { \n                if (this.waterStream.scale.y> 0) {\n                    this.waterStream.scale.y -= 0.07\n                }\n            }\n\n            // Limit\n            this.waterStream.scale.y = Math.max(0,Math.min(1,this.waterStream.scale.y))\n            // Keep top attached to nozzle\n            const currentHeight = this.waterHeight * this.waterStream.scale.y\n\n            this.waterStream.position.y = this.waterTopY - currentHeight / 2\n\n            // Small wave effect\n            if (this.waterStream.scale.y > 0) {\n                const t = Date.now() * 0.01\n                this.waterStream.scale.x = 1 + Math.sin(t) * 0.08\n                this.waterStream.scale.z = 1 + Math.cos(t) * 0.08\n            }\n\n            // Water level in glass\n            // Reset glass\n            if (this.resetGlass) {           \n                this.waterGlass.scale.y = 0               \n                this.waterGlass.position.y =\n                this.waterGlassBottomY              \n                this.resetGlass = false          \n            }\n\n            if (this.openValve) {\n                if (this.waterGlass.scale.y < 1) { \n                    this.waterGlass.scale.y +=0.0017 \n                } \n            } \n                \n            this.waterGlass.scale.y=Math.max( 0, Math.min(1,\n                this.waterGlass.scale.y) ) \n            \n            const glassHeight=\n                this.waterGlassHeight * this.waterGlass.scale.y\n            \n            this.waterGlass.position.y=this.waterGlassBottomY + glassHeight / 2 \n            \n            if (this.waterGlass.scale.y> 0) {\n                const t = Date.now() * 0.001\n                this.waterGlass.scale.x = 1 + Math.sin(t) * 0.01\n                this.waterGlass.scale.z = 1 + Math.cos(t) * 0.01\n            } \n            else {\n                this.waterGlass.scale.x = 1\n                this.waterGlass.scale.z = 1\n            }\n                \n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 600,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f44d72157c33ab07",
-        "type": "ui-button",
-        "z": "168ef48b19c5ec43",
-        "g": "5eeb71663615d4fe",
-        "group": "3fdfec0bfe79b90f",
-        "name": "",
-        "label": "Valve Open",
-        "order": 1,
-        "width": "3",
-        "height": "1",
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "buttonColor": "",
-        "textColor": "",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 150,
-        "y": 580,
-        "wires": [
-            [
-                "b9bbeeafc52b3b62"
-            ]
-        ]
-    },
-    {
-        "id": "ee67a56cab6c32e7",
-        "type": "ui-button",
-        "z": "168ef48b19c5ec43",
-        "g": "5eeb71663615d4fe",
-        "group": "3fdfec0bfe79b90f",
-        "name": "",
-        "label": "Valve Close",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "false",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "buttonColor": "",
-        "textColor": "",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 150,
-        "y": 620,
-        "wires": [
-            [
-                "b9bbeeafc52b3b62"
-            ]
-        ]
-    },
-    {
-        "id": "b9bbeeafc52b3b62",
+        "id": "f7dff726e693316a",
         "type": "change",
-        "z": "168ef48b19c5ec43",
-        "g": "5eeb71663615d4fe",
+        "z": "e5209eca5f184bd9",
+        "g": "de602093b23dc662",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "open",
+                "p": "yellow",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -659,34 +614,284 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
-        "y": 580,
+        "x": 360,
+        "y": 740,
         "wires": [
             [
-                "b3fd804aa0848923"
+                "4292cb578e229d3d"
             ]
         ]
     },
     {
-        "id": "3ac614fdf19a5866",
-        "type": "ui-button",
-        "z": "168ef48b19c5ec43",
-        "g": "5eeb71663615d4fe",
-        "group": "3fdfec0bfe79b90f",
+        "id": "0f09ab6c11024dc3",
+        "type": "change",
+        "z": "e5209eca5f184bd9",
+        "g": "de602093b23dc662",
         "name": "",
-        "label": "Reset Glass",
-        "order": 3,
+        "rules": [
+            {
+                "t": "set",
+                "p": "red",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 780,
+        "wires": [
+            [
+                "4292cb578e229d3d"
+            ]
+        ]
+    },
+    {
+        "id": "53f043a81f176121",
+        "type": "ui-template",
+        "z": "e5209eca5f184bd9",
+        "g": "546f539ff2f7ec91",
+        "group": "2102536d61889aa6",
+        "page": "",
+        "ui": "",
+        "name": "Doughnut",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div style=\"\n            padding:5px;\n            font-weight:bold;\n        \">\n        Static Text\n    </div>\n    <div\n        ref=\"container\"\n        style=\"\n            width:100%;\n            height:100%;\n            min-height:400px;\n        \"\n    ></div>\n</template>\n\n<script>\nexport default {\n\n    data() {\n        return {\n            monitor: null,\n            \n            screenMesh: null,\n            screenCanvas: null,\n            screenCtx: null,\n            screenTexture: null,\n            \n            oee: 0\n        }\n    },\n\n    watch: {\n        msg() {\n            if (!this.screenCtx) return\n            if (typeof this.msg?.oee === \"number\") {\n                this.oee = this.msg.oee\n                this.updateScreen()\n            }\n        }\n    },\n\n    methods: {\n        updateScreen() {       \n            const ctx = this.screenCtx\n            const canvas = this.screenCanvas\n            \n            const oee = Math.max(\n                0,\n                Math.min(100,this.oee)\n            )\n            \n            ctx.clearRect(\n                0,\n                0,\n                canvas.width,\n                canvas.height\n            )\n            \n            // background\n            ctx.fillStyle = \"#111111\"\n            \n            ctx.fillRect(\n                0,\n                0,\n                canvas.width,\n                canvas.height\n            )\n            \n            const cx = canvas.width * 0.75\n            const cy = canvas.height * 0.50\n            \n            const radius = 80\n            \n            // background ring\n            ctx.beginPath()\n            \n            ctx.lineWidth = 30\n            ctx.strokeStyle = \"#333333\"\n            \n            ctx.arc(\n                cx,\n                cy,\n                radius,\n                0,\n                Math.PI * 2\n            )\n            \n            ctx.stroke()\n            \n            // OEE color\n            let gaugeColor = \"#00ff00\"           \n            if (oee < 60) \n                gaugeColor=\"#ff0000\" \n            else if (oee < 85) \n                gaugeColor=\"#ffff00\" \n\n            // progress ring \n            ctx.beginPath()\n            ctx.lineWidth=30\n            ctx.strokeStyle=gaugeColor \n            ctx.arc( \n                cx, \n                cy, \n                radius, \n                -Math.PI / 2, \n                -Math.PI / 2 + (Math.PI * 2 * oee/ 100) \n            ) \n            ctx.stroke() \n\n            // title \n            ctx.fillStyle=\"white\" \n            ctx.font=\"bold 20px Arial\" \n            ctx.textAlign=\"center\"\n            ctx.fillText( \"OEE\" , cx, cy - 20 ) \n            // value \n            ctx.fillStyle=gaugeColor \n            ctx.font=\"bold 35px Arial\" \n            ctx.fillText( oee + \"%\" , cx, cy + 15 ) \n            this.screenTexture.needsUpdate=true \n        }\n\n    },\n\n    async mounted() {\n        const THREE = await import( 'https://esm.sh/three@0.179.1' )\n        const {OrbitControls} = await import('https://esm.sh/three@0.179.1/examples/jsm/controls/OrbitControls')\n        const {GLTFLoader} = await import('https://esm.sh/three@0.179.1/examples/jsm/loaders/GLTFLoader')\n\n        const container = this.$refs.container\n\n        // Scene\n        const scene = new THREE.Scene()\n\n        scene.background = new THREE.Color(0xf5f5f5)\n\n        // Camera\n        const camera =\n            new THREE.PerspectiveCamera(\n                75,\n                container.clientWidth /\n                container.clientHeight,\n                0.1,\n                1000\n            )\n\n        camera.position.set(0,2,2.5)\n\n        // Renderer\n        const renderer =\n            new THREE.WebGLRenderer({\n                antialias: true\n            })\n\n        renderer.setSize(\n            container.clientWidth,\n            container.clientHeight\n        )\n\n        container.appendChild(\n            renderer.domElement\n        )\n\n        // Orbit\n        const controls =\n            new OrbitControls(\n                camera,\n                renderer.domElement\n            )\n\n        controls.target.set(0,1.5, 0)\n\n        controls.enableDamping = true\n\n        // Light\n        scene.add(\n            new THREE.AmbientLight(\n                0xffffff,\n                2\n            )\n        )\n\n        const light =\n            new THREE.DirectionalLight(\n                0xffffff,\n                3\n            )\n\n        light.position.set(5,10,5)\n        scene.add(light)\n\n        // Grid\n        scene.add(\n            new THREE.GridHelper(\n                10,\n                10\n            )\n        )\n\n        // Loader\n        const loader =\n            new GLTFLoader()\n\n        loader.load(\n            \"/models/monitor.glb\",\n            (gltf) => {\n\n                const monitor = gltf.scene\n\n                monitor.traverse(\n                    (obj) => {\n\n                        if (obj.name === \"Monitor_Screen\") {\n                            console.log(\"SCREEN FOUND\")\n\n                            // Canvas\n                            const canvas =document.createElement(\"canvas\")\n\n                            canvas.width = 1024\n                            canvas.height = 1024\n\n                            const ctx = canvas.getContext(\"2d\")\n\n                            const texture = new THREE.CanvasTexture(canvas)\n\n                            // Adjustment rotation of text because UV\n                            texture.center.set(0.5,0.5)\n                            texture.rotation = -Math.PI/2\n                            \n                            obj.material =\n                                new THREE.MeshBasicMaterial({\n                                    map: texture\n                                })\n\n                            this.screenMesh = obj\n                            this.screenCanvas = canvas\n                            this.screenCtx = ctx\n                            this.screenTexture = texture\n                            this.updateScreen(\"WELCOME\")\n                        }\n\n                    }\n                )\n\n                monitor.scale.set(\n                    1,\n                    1,\n                    1\n                )\n\n                monitor.position.set(\n                    0,\n                    0,\n                    0\n                )\n\n                scene.add(\n                    monitor\n                )\n\n                this.monitor =\n                    monitor\n\n            },\n\n            undefined,\n\n            (err) => {\n                console.error(err)\n            }\n        )\n\n        const animate = () => {\n\n            requestAnimationFrame(\n                animate\n            )\n\n            controls.update()\n\n            renderer.render(\n                scene,\n                camera\n            )\n\n        }\n\n        animate()\n\n    }\n\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 560,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de64b4dfaf2dbdc7",
+        "type": "ui-text-input",
+        "z": "e5209eca5f184bd9",
+        "g": "546f539ff2f7ec91",
+        "group": "2102536d61889aa6",
+        "name": "",
+        "label": "OEE Value",
+        "order": 1,
         "width": "3",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 130,
+        "y": 600,
+        "wires": [
+            [
+                "0a2c387cea72eb45"
+            ]
+        ]
+    },
+    {
+        "id": "0a2c387cea72eb45",
+        "type": "function",
+        "z": "e5209eca5f184bd9",
+        "g": "546f539ff2f7ec91",
+        "name": "function 3",
+        "func": "msg.oee = parseFloat(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 600,
+        "wires": [
+            [
+                "53f043a81f176121"
+            ]
+        ]
+    },
+    {
+        "id": "2ef915ce79d62bd7",
+        "type": "inject",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "[{\"label\":\"Machine 1\",\"value\":\"machine1.glb\"},{\"label\":\"Machine 2\",\"value\":\"machine2.glb\"},{\"label\":\"Machine 3\",\"value\":\"machine3.glb\"},{\"label\":\"Machine 4\",\"value\":\"machine4.glb\"},{\"label\":\"Machine 5\",\"value\":\"machine5.glb\"}]",
+        "payloadType": "json",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "6ae988041ed8f654"
+            ]
+        ]
+    },
+    {
+        "id": "6ae988041ed8f654",
+        "type": "change",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "list",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71a0d7758615c028",
+        "type": "inject",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "2e689dfb15850526"
+            ]
+        ]
+    },
+    {
+        "id": "2e689dfb15850526",
+        "type": "function",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "name": "function 8",
+        "func": "msg.ui_update = {\n    options: flow.get(\"list\")\n}\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "cda6dd58e1814227"
+            ]
+        ]
+    },
+    {
+        "id": "9f7c24a25a61286b",
+        "type": "function",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "name": "function 9",
+        "func": "const list = flow.get(\"list\") || []\n\nif (list.length === 0) {\n    return null\n}\n\nlet index = flow.get(\"currentIndex\") || 0\n\nindex += msg.payload\n\nif (index < 0) {\n    index = list.length - 1\n}\n\nif (index >= list.length) {\n    index = 0\n}\n\nflow.set(\"currentIndex\", index)\n\nmsg.payload = list[index].value\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "cda6dd58e1814227"
+            ]
+        ]
+    },
+    {
+        "id": "a6feb5a0ca342910",
+        "type": "function",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "name": "function 10",
+        "func": "const list = flow.get(\"list\") || []\n\nconst index = list.findIndex(\n    item => item.value === msg.payload\n)\n\nif (index >= 0) {\n    flow.set(\"currentIndex\", index)\n}\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5143d5c08d8cdccd",
+        "type": "ui-button",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "group": "781892863eac3c62",
+        "name": "",
+        "label": "Previous Model",
+        "order": 2,
+        "width": "2",
         "height": "1",
         "emulateClick": false,
         "tooltip": "",
         "color": "",
         "bgcolor": "",
         "className": "",
-        "icon": "",
+        "icon": "skip-previous-circle",
         "iconPosition": "left",
-        "payload": "reset",
-        "payloadType": "str",
+        "payload": "-1",
+        "payloadType": "num",
         "topic": "topic",
         "topicType": "msg",
         "buttonColor": "",
@@ -699,19 +904,59 @@
         "enablePointerup": false,
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
-        "x": 390,
-        "y": 660,
+        "x": 140,
+        "y": 120,
         "wires": [
             [
-                "b3fd804aa0848923"
+                "9f7c24a25a61286b"
             ]
         ]
     },
     {
-        "id": "caec5d268b4b8826",
+        "id": "1162a5f6b6a3aa34",
+        "type": "ui-button",
+        "z": "e5209eca5f184bd9",
+        "g": "67b9de111c979d54",
+        "group": "781892863eac3c62",
+        "name": "",
+        "label": "Next Model",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "skip-next-circle",
+        "iconPosition": "right",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "9f7c24a25a61286b"
+            ]
+        ]
+    },
+    {
+        "id": "781892863eac3c62",
         "type": "ui-group",
-        "name": "Simple Load GLB",
-        "page": "2a1ac6df7b0e146d",
+        "name": "Change Model",
+        "page": "9d6fc2707bd16335",
         "width": "12",
         "height": "1",
         "order": 1,
@@ -722,24 +967,10 @@
         "groupType": "default"
     },
     {
-        "id": "114f08da44e3c00f",
+        "id": "a6637015b8a158c5",
         "type": "ui-group",
-        "name": "Change Color",
-        "page": "2a1ac6df7b0e146d",
-        "width": "12",
-        "height": "1",
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "77fc9b50d805feac",
-        "type": "ui-group",
-        "name": "Rotation",
-        "page": "2a1ac6df7b0e146d",
+        "name": "Screen Text",
+        "page": "9d6fc2707bd16335",
         "width": "12",
         "height": "1",
         "order": 3,
@@ -750,10 +981,38 @@
         "groupType": "default"
     },
     {
-        "id": "3fdfec0bfe79b90f",
+        "id": "38d5933b58cdd3e3",
         "type": "ui-group",
-        "name": "Water",
-        "page": "2a1ac6df7b0e146d",
+        "name": "Machine Door",
+        "page": "9d6fc2707bd16335",
+        "width": "12",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2e7da168776e6eb9",
+        "type": "ui-group",
+        "name": "Tower Lamp",
+        "page": "9d6fc2707bd16335",
+        "width": "12",
+        "height": "1",
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2102536d61889aa6",
+        "type": "ui-group",
+        "name": "Screen Gauge",
+        "page": "9d6fc2707bd16335",
         "width": "12",
         "height": "1",
         "order": 4,
@@ -764,12 +1023,12 @@
         "groupType": "default"
     },
     {
-        "id": "2a1ac6df7b0e146d",
+        "id": "9d6fc2707bd16335",
         "type": "ui-page",
-        "name": "Play With GLB",
+        "name": "Dynamic Model",
         "ui": "33ab3c7ff5333228",
-        "path": "/play_with_glb",
-        "icon": "duck",
+        "path": "/dynamic_model",
+        "icon": "package",
         "layout": "grid",
         "theme": "b19b6ed732206c18",
         "breakpoints": [
@@ -794,7 +1053,7 @@
                 "cols": "12"
             }
         ],
-        "order": 3,
+        "order": 4,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -823,8 +1082,8 @@
         "type": "ui-theme",
         "name": "Default Theme",
         "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
+            "surface": "#044d71",
+            "primary": "#0094ce",
             "bgPage": "#eeeeee",
             "groupBg": "#ffffff",
             "groupOutline": "#cccccc"
